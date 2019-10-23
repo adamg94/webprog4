@@ -4,3 +4,8 @@
     background-color: lightgray;
     font-family: arial;
 }
+
+#buttons button {
+    padding: 10px;
+    font-size: 15px
+}
