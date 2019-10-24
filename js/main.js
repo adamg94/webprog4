@@ -26,6 +26,7 @@ window.onload = async() => {
         articles = [];
         articles_option = [];
         data_articles = [];
+        select_options.innerHTML = "";
 
         await fetch('js/data-splitted-' + dataindex + '.txt').then((res) => res).then(response => {
             response.text().then((text) => {
@@ -125,8 +126,8 @@ window.onload = async() => {
                         }
                     }
 
-                    p.innerHTML = 'P: ' + precision / (recommended_labels_separated.length + recommended_labels_other_separated.length);
-                    r.innerHTML = 'R: ' + precision / (splitted_label3.length + splitted_label4.length);
+                    p.innerHTML = 'P: ' + (precision / (recommended_labels_separated.length + recommended_labels_other_separated.length)).toFixed(2);
+                    r.innerHTML = 'R: ' + (precision / (splitted_label3.length + splitted_label4.length)).toFixed(2);
 
                     /**
                      * A mintaképen a Research Motion cikk esetében P: 0.766 van, míg R: 0.318.

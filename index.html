@@ -5,49 +5,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title></title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <select id="articles">
+    <aside>
+        <ul>
+
+            <li class="bigger">modellek</li>
+
+            <hr />
+
+            <li>hetilap</li>
+            <hr />
+
+            <li>online</li>
+            <hr />
+
+            <li>hetilap+online</li>
+            <hr />
+
+            <li class="bigger">demó</li>
+            <hr />
+
+            <li>címkéző</li>
+            <hr />
+
+            <li>tanító</li>
+        </ul>
+    </aside>
+    <div id="content">
+        <h1>címke ajánló - hetilap</h1>
+        <h3>cikkek listája:</h3>
+        <select id="articles">
         
     </select>
-    <div id="range">
-        <label>Valószínűség
+        <div id="buttons">
+            <button id="button-left-0">&#171;</button>
+            <button id="button-left-1">&#8249;</button>
+            <button id="button-right-1">&#8250;</button>
+            <button id="button-right-99">&#187;</button>
+        </div>
+        <div id="clear"></div>
+        <div id="range">
+            <label>Valószínűség<span id="limiter-value"></span>
+                <label id="min3label">
+                        <input id="min3" type="checkbox" />
+                        <span class="checkmark"></span><span>Min. 3</span>
+                        </label>
+            <div id="pr">
+                <p id="p">P: </p>
+                <p id="r">R: </p>
+            </div>
             <input id="limiter" value="0.8" type="range" min="0" max="1" step="0.1" />
-            <span id="limiter-value"></span>
-        </label>
-        <label>Min. 3
-            <input id="min3" type="checkbox" />
-        </label>
-    </div>
-    <div>
-        <p id="p">P: </p>
-        <p id="r">R: </p>
-    </div>
-    <div id="buttons">
-        <button id="button-left-0">&#171;</button>
-        <button id="button-left-1">&#8249;</button>
-        <button id="button-right-1">&#8250;</button>
-        <button id="button-right-99">&#187;</button>
-    </div>
-    <h2>Article</h2>
-    <article id="article">
 
-    </article>
-    <section id="labels">
-        <h2>Original</h2>
-        <ul id="original"></ul>
-        <h2>Recommended</h2>
-        <div id="recommended"></div>
-    </section>
-    <section id="other-labels">
-        <h2>Original_other</h2>
-        <ul id="original-other"></ul>
-        <h2>Recommended_other</h2>
-        <ul id="recommended-other"></ul>
-    </section>
+            </label>
+
+        </div>
+
+
+
+        <article>
+            <h2>Cikk szövege</h2>
+            <div id="article"></div>
+        </article>
+        <section id="labels">
+            <h2>Eredeti címkék</h2>
+            <ul id="original"></ul>
+            <h2>Eredeti címkék (egyéb)</h2>
+            <ul id="original-other"></ul>
+
+        </section>
+        <section id="other-labels">
+            <h2>Ajánlott címkék</h2>
+            <ul id="recommended"></ul>
+            <h2>Ajánlott címkék (egyéb)</h2>
+            <ul id="recommended-other"></ul>
+        </section>
+        <div id="clear"></div>
+
+        <section id="random-data">
+            <div>
+                <span id="heading">hetilap</span>
+                <ul>
+                    <li>cikk: <span>110 ezer</span></li>
+                    <li>címke: <span>1023 db</span></li>
+                    <li>token: <span>73 millió</span></li>
+                    <li>type: <span>62 ezer</span></li>
+                </ul>
+            </div>
+            <div>
+                <span id="heading">hetilap+</span>
+                <ul>
+                    <li>cikk: <span>110 ezer</span></li>
+                    <li>címke: <span>26901 db</span></li>
+                    <li>token: <span>73 millió</span></li>
+                    <li>type: <span>36 ezer</span></li>
+                </ul>
+            </div>
+            <div>
+                <span id="heading">online</span>
+                <ul>
+                    <li>cikk: <span>80 ezer</span></li>
+                    <li>címke: <span>76654 db</span></li>
+                    <li>token: <span>35 millió</span></li>
+                    <li>type: <span>33 ezer</span></li>
+                </ul>
+            </div>
+            <div>
+                <span id="heading">hetilap+online</span>
+                <ul>
+                    <li>cikk: <span>195 ezer</span></li>
+                    <li>címke: <span>104432 db</span></li>
+                    <li>token: <span>112 millió</span></li>
+                    <li>type: <span>38 ezer</span></li>
+                </ul>
+            </div>
+        </section>
+        <div id="clear"></div>
+        <footer>
+            <div>Project 2019</div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
+    </div>
     <script src="js/main.js" async="async" defer="defer"></script>
+
 </body>
 
 </html>
