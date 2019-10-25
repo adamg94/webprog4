@@ -12,79 +12,79 @@
 <body>
     <aside>
         <ul>
-
             <li class="bigger">modellek</li>
-
             <hr />
-
             <li>hetilap</li>
             <hr />
-
             <li>online</li>
             <hr />
-
             <li>hetilap+online</li>
             <hr />
-
             <li class="bigger">demó</li>
             <hr />
-
             <li>címkéző</li>
             <hr />
-
             <li>tanító</li>
         </ul>
     </aside>
     <div id="content">
-        <h1>címke ajánló - hetilap</h1>
-        <h3>cikkek listája:</h3>
+        <h1>címkeajánló - HETILAP</h1>
+        <h3>Cikkek listája:</h3>
         <select id="articles">
-        
-    </select>
+            </select>
         <div id="buttons">
-            <button id="button-left-0">&#171;</button>
+            <button id="button-left-0">&#8920;</button>
+            <button id="button-left-10">&#171;</button>
             <button id="button-left-1">&#8249;</button>
             <button id="button-right-1">&#8250;</button>
-            <button id="button-right-99">&#187;</button>
+            <button id="button-right-10">&#187;</button>
+            <button id="button-right-99">&#8921;</button>
         </div>
         <div id="clear"></div>
         <div id="range">
-            <label>Valószínűség<span id="limiter-value"></span>
-                <label id="min3label">
-                        <input id="min3" type="checkbox" />
-                        <span class="checkmark"></span><span>Min. 3</span>
-                        </label>
-            <div id="pr">
-                <p id="p">P: </p>
-                <p id="r">R: </p>
-            </div>
-            <input id="limiter" value="0.8" type="range" min="0" max="1" step="0.1" />
-
-            </label>
-
+            <label id="limiter-num">
+                Valószínűség <span id="limiter-value"></span>
+                <input id="limiter" value="0.8" type="range" min="0" max="1" step="0.1" />
+                </label>
+            <label id="min3label">
+                <input id="min3" type="checkbox" />
+                <span class="checkmark"></span>
+                min. 3
+                </label>
+            <label>
+                    <div id="pr">
+                        <p id="p">P: </p>
+                        <p id="r">R: </p>
+                    </div>
+                </label>
         </div>
-
-
-
         <article>
             <h2>Cikk szövege</h2>
             <div id="article"></div>
         </article>
         <section id="labels">
-            <h2>Eredeti címkék</h2>
-            <ul id="original"></ul>
-            <h2>Eredeti címkék (egyéb)</h2>
-            <ul id="original-other"></ul>
-
+            <div id="float">
+                <h2>Eredeti címkék</h2>
+                <ul id="original"></ul>
+            </div>
+            <div id="vertical-line"></div>
+            <div id="float">
+                <h2>Ajánlott címkék</h2>
+                <ul id="recommended"></ul>
+            </div>
         </section>
         <section id="other-labels">
-            <h2>Ajánlott címkék</h2>
-            <ul id="recommended"></ul>
-            <h2>Ajánlott címkék (egyéb)</h2>
-            <ul id="recommended-other"></ul>
+            <div id="float">
+                <h2>Eredeti címkék (egyéb)</h2>
+                <ul id="original-other"></ul>
+            </div>
+            <div id="vertical-line"></div>
+            <div id="float">
+                <h2>Ajánlott címkék (egyéb)</h2>
+                <ul id="recommended-other"></ul>
+            </div>
         </section>
         <div id="clear"></div>
-
         <section id="random-data">
             <div>
                 <span id="heading">hetilap</span>
@@ -125,12 +125,11 @@
         </section>
         <div id="clear"></div>
         <footer>
-            <div>Project 2019</div>
+            <div>Project ⊙ 2019</div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
     </div>
     <script src="js/main.js" async="async" defer="defer"></script>
-
 </body>
 
 </html>
